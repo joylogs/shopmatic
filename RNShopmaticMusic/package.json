@@ -8,8 +8,10 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "json-groupby": "^1.1.0",
     "react": "16.8.6",
-    "react-native": "0.60.0"
+    "react-native": "0.60.0",
+    "react-navigation": "^4.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
