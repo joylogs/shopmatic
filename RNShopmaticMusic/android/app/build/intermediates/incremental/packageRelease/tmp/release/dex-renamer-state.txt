@@ -1,0 +1,4 @@
+#Wed Jul 15 22:21:00 IST 2020
+base.0=/Users/joy.banerjee/git/React/shopmatic/RNShopmaticMusic/android/app/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex
