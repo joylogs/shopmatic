@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jul 15 22:21:00 IST 2020
+#Thu Jul 16 10:43:34 IST 2020
 5.base=/Users/joy.banerjee/git/React/shopmatic/RNShopmaticMusic/android/app/build/intermediates/transforms/mergeJniLibs/release/0
 42.base=/Users/joy.banerjee/git/React/shopmatic/RNShopmaticMusic/android/app/build/intermediates/transforms/mergeJniLibs/release/0
 22.path=lib/arm64-v8a/libc++_shared.so

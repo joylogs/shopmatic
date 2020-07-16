@@ -29,100 +29,167 @@ import {
   getTopAlbums
 } from '../config/api'
 
-var data = [
+var mockData = [
   {
     "id": 1,
     "title": "Passed Orders",
     "innerArray": [{
       "id": 1,
-      "name": "Shivam Tiwari 1",
+      "im:name": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ],
       "star": "150",
-      "image": "https://lh3.googleusercontent.com/-sUUgyO92gjw/Xe5Df6MwaZI/AAAAAAAABDc/bYtyIbnUM8ACX83GYB7-XjFzs-HAmbE1QCK8BGAsYHg/s0/2019-12-09.jpg"
+      "im:price": {
+        "label": "$19.99",
+        "attributes": {
+          "amount": "19.99000",
+          "currency": "USD"
+        }
+      },
+      "im:image": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ]
     }, {
       "id": 2,
-      "name": "Shivam Tiwari 2",
+      "im:name": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ],
       "star": "150",
-      "image": "https://lh3.googleusercontent.com/-OUEDRCj2dQo/Xe5Da2ZmqhI/AAAAAAAABDM/j9qXtid6afYaHNi-pwsOlVOUUdFej-dXgCK8BGAsYHg/s0/2019-12-09.jpg"
+      "im:price": {
+        "label": "$19.99",
+        "attributes": {
+          "amount": "19.99000",
+          "currency": "USD"
+        }
+      },
+      "im:image": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ]
     }, {
       "id": 4,
-      "name": "Shivam Tiwari 4",
+      "im:price": {
+        "label": "$19.99",
+        "attributes": {
+          "amount": "19.99000",
+          "currency": "USD"
+        }
+      },
+      "im:name": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ],
       "star": "150",
-      "image": "https://lh3.googleusercontent.com/-ja97CHMzpN4/Xe5DcMVro2I/AAAAAAAABDQ/Z0Tht5w0TIUw37t8newe5YF6RgZYayXFwCK8BGAsYHg/s0/2019-12-09.jpg"
-    }]
-  },
-  {
-    "id": 2,
-    "title": "Top People",
-    "innerArray": [{
-      "id": 5,
-      "name": "Shivam Tiwari",
-      "star": "15000",
-      "image": "https://lh3.googleusercontent.com/-1NXIa1zFf7E/Xe5DyVxnkHI/AAAAAAAABDg/BTB_V4UtLNwQHqIrIXKl6cMKlutU7h3JACK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 6,
-      "name": "Shubham Tripathi",
-      "star": "45",
-      "image": "https://lh3.googleusercontent.com/-ja97CHMzpN4/Xe5DcMVro2I/AAAAAAAABDQ/Z0Tht5w0TIUw37t8newe5YF6RgZYayXFwCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 7,
-      "name": "Kartikeya Sharma",
-      "star": "55",
-      "image": "https://lh3.googleusercontent.com/-sUUgyO92gjw/Xe5Df6MwaZI/AAAAAAAABDc/bYtyIbnUM8ACX83GYB7-XjFzs-HAmbE1QCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 8,
-      "name": "Manoj",
-      "star": "90",
-      "image": "https://lh3.googleusercontent.com/-ulyCVQkAlK4/Xe5DZjhE9dI/AAAAAAAABDI/1zgelciGvyE67cOYEqD-XRlmO-JQAW-yACK8BGAsYHg/s0/2019-12-09.jpg"
-    }]
-  },
-  {
-    "id": 3,
-    "title": "Favourite Celeb",
-    "innerArray": [{
-      "id": 9,
-      "name": "Manoj Kumar Verma",
-      "star": "20",
-      "image": "https://lh3.googleusercontent.com/-OUEDRCj2dQo/Xe5Da2ZmqhI/AAAAAAAABDM/j9qXtid6afYaHNi-pwsOlVOUUdFej-dXgCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 10,
-      "name": "Ashish",
-      "star": "10",
-      "image": "https://lh3.googleusercontent.com/-ulyCVQkAlK4/Xe5DZjhE9dI/AAAAAAAABDI/1zgelciGvyE67cOYEqD-XRlmO-JQAW-yACK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 11,
-      "name": "Balendu Tiwari",
-      "star": "150",
-      "image": "https://lh3.googleusercontent.com/-ja97CHMzpN4/Xe5DcMVro2I/AAAAAAAABDQ/Z0Tht5w0TIUw37t8newe5YF6RgZYayXFwCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 12,
-      "name": "Amit Kumar Singh",
-      "star": "200",
-      "image": "https://lh3.googleusercontent.com/-1NXIa1zFf7E/Xe5DyVxnkHI/AAAAAAAABDg/BTB_V4UtLNwQHqIrIXKl6cMKlutU7h3JACK8BGAsYHg/s0/2019-12-09.jpg"
-    }]
-  },
-  {
-    "id": 4,
-    "title": "Custom Celebrity",
-    "innerArray": [{
-      "id": 13,
-      "name": "Manoj Kumar Verma",
-      "star": "20",
-      "image": "https://lh3.googleusercontent.com/-OUEDRCj2dQo/Xe5Da2ZmqhI/AAAAAAAABDM/j9qXtid6afYaHNi-pwsOlVOUUdFej-dXgCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 14,
-      "name": "Ashish",
-      "star": "10",
-      "image": "https://lh3.googleusercontent.com/-ulyCVQkAlK4/Xe5DZjhE9dI/AAAAAAAABDI/1zgelciGvyE67cOYEqD-XRlmO-JQAW-yACK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 15,
-      "name": "Balendu Tiwari",
-      "star": "150",
-      "image": "https://lh3.googleusercontent.com/-ja97CHMzpN4/Xe5DcMVro2I/AAAAAAAABDQ/Z0Tht5w0TIUw37t8newe5YF6RgZYayXFwCK8BGAsYHg/s0/2019-12-09.jpg"
-    }, {
-      "id": 16,
-      "name": "Amit Kumar Singh",
-      "star": "200",
-      "image": "https://lh3.googleusercontent.com/-1NXIa1zFf7E/Xe5DyVxnkHI/AAAAAAAABDg/BTB_V4UtLNwQHqIrIXKl6cMKlutU7h3JACK8BGAsYHg/s0/2019-12-09.jpg"
+      "im:price": {
+        "label": "$19.99",
+        "attributes": {
+          "amount": "19.99000",
+          "currency": "USD"
+        }
+      },
+      "im:image": [
+        {
+          "label": "https://is2-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/55x55bb.png",
+          "attributes": {
+            "height": "55"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/60x60bb.png",
+          "attributes": {
+            "height": "60"
+          }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music20/v4/da/a3/4a/daa34a3a-cce7-c9f0-9c5e-267f63f8b3e3/075679909183.jpg/170x170bb.png",
+          "attributes": {
+            "height": "170"
+          }
+        }
+      ]
     }]
   }
 ];
@@ -138,7 +205,7 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      dataArr: data
+      dataArr: mockData
     };
     console.log('Props from native', props)
   }
@@ -146,13 +213,6 @@ export default class App extends Component {
   componentDidMount() {
     this.loadApiData()
   }
-
-  groupBy = (data, key) => {
-    return data.reduce(function (acc, item) {
-      (acc[item[key]] = acc[item[key]] || []).push(item);
-      return acc;
-    }, {});
-  };
 
   render() {
     return (
@@ -175,11 +235,11 @@ export default class App extends Component {
                     renderItem={({ item: innerData, index }) =>
                       <View style={{ width: 100, height: 100, backgroundColor: "#FFFFFF", padding: 5 }}>
                         <TouchableOpacity style={{ width: '100%', height: '100%', alignItems: 'center' }}>
-                          <Text style={{ fontSize: 15, fontFamily: 'System', color: '#747474', textAlign: 'center', }} numberOfLines={1}>{innerData.name}</Text>
+                          <Text style={{ fontSize: 12, fontFamily: 'System', color: '#747474', textAlign: 'center', }} numberOfLines={1}>{innerData["im:name"]["label"]}</Text>
                           <View style={{ marginTop: 3, flex: 1, width: '100%', borderRadius: 10, elevation: 1, shadowColor: "#0000002B", shadowRadius: 2, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 1.0, backgroundColor: '#FFFFFF' }}>
                             <Image
                               style={{ width: '100%', height: '100%', borderRadius: 10 }}
-                              source={{ uri: innerData.image }}
+                              source={{ uri: innerData["im:image"][2]["label"] }}
                             />
                           </View>
 
@@ -188,7 +248,7 @@ export default class App extends Component {
                               style={{ width: 12, height: 12 }}
                             // source={require('../SupportingFiles/Icons/black-star.png')}
                             />
-                            <Text style={{ fontSize: 15, fontFamily: 'System', color: '#000000', textAlign: 'center', alignSelf: 'center', marginLeft: 3 }}>{innerData.star}</Text>
+                            <Text style={{ fontSize: 10, fontFamily: 'System', color: '#000000', textAlign: 'center', alignSelf: 'center', marginLeft: 1 }}>{innerData["im:price"]["label"]}</Text>
                           </View>
 
                         </TouchableOpacity>
@@ -206,17 +266,22 @@ export default class App extends Component {
     const promiseArray = [];
     promiseArray.push(getTopAlbums())
     Promise.all(promiseArray).then(data => {
-      // console.log("This is called from app.js", data[0])
 
       var groupedArray = groupBy(data[0], 'category.attributes.term')
       console.log("This is called from app.js", groupedArray)
 
-      // console.log("This is called from app.js", groupedArray['key'])
+      const listedAlbums = [];
+      const keysGroupedArray = Object.keys(groupedArray);
+      const valuesGroupedArray = Object.values(groupedArray);
 
-      // groupedArray['key']
-
-      this.setState (
-          // {dataArr : groupedArray}
+      for (let i = 0; i < keysGroupedArray.length; i++) {
+        listedAlbums.push({
+          title: keysGroupedArray[i],
+          innerArray: valuesGroupedArray[i]
+        });
+      }
+      this.setState(
+        { dataArr: listedAlbums }
       );
     })
       .catch(e => {
