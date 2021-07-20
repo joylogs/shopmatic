@@ -10,7 +10,7 @@
     "axios": "^0.21.1",
     "json-groupby": "^1.1.0",
     "react": "16.8.6",
-    "react-native": "0.60.0",
+    "react-native": "0.62.3",
     "react-navigation": "^4.4.0"
   },
   "devDependencies": {
