@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "axios": "^0.21.2",
+    "axios": "^1.6.0",
     "json-groupby": "^1.1.0",
     "react": "16.8.6",
     "react-native": "0.70.6",
