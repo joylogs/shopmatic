@@ -37,7 +37,7 @@ This project is a boilerplate for building cross-platform mobile applications us
 
 - Node.js (v16 or above recommended)
 - npm or yarn
-- React Native CLI or Expo CLI (depending on your version)
+- React Native CLI or Expo CLI
 - Xcode / Android Studio
 
 ### Installation
